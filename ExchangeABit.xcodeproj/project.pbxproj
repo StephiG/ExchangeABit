@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		960128C01BAB49EC0091625C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960128BF1BAB49EC0091625C /* AppDelegate.swift */; };
-		960128C21BAB49EC0091625C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960128C11BAB49EC0091625C /* ViewController.swift */; };
 		960128C51BAB49EC0091625C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960128C31BAB49EC0091625C /* Main.storyboard */; };
 		960128C81BAB49EC0091625C /* ExchangeABit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 960128C61BAB49EC0091625C /* ExchangeABit.xcdatamodeld */; };
 		960128CA1BAB49EC0091625C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960128C91BAB49EC0091625C /* Assets.xcassets */; };
 		960128CD1BAB49EC0091625C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960128CB1BAB49EC0091625C /* LaunchScreen.storyboard */; };
+		966268D41BAF22A00068AEEE /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966268D31BAF22A00068AEEE /* FilterViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		96F47BD01BADDD71003C597B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F47BCF1BADDD71003C597B /* FeedViewController.swift */; };
+		96F47BD21BADDEAF003C597B /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F47BD11BADDEAF003C597B /* FeedCell.swift */; };
+		96F47BDA1BADE29F003C597B /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F47BD81BADE29F003C597B /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		960128BC1BAB49EC0091625C /* ExchangeABit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeABit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		960128BF1BAB49EC0091625C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		960128C11BAB49EC0091625C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		960128C41BAB49EC0091625C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		960128C71BAB49EC0091625C /* ExchangeABit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExchangeABit.xcdatamodel; sourceTree = "<group>"; };
 		960128C91BAB49EC0091625C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		960128CC1BAB49EC0091625C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		960128CE1BAB49EC0091625C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		966268D31BAF22A00068AEEE /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		96F47BCF1BADDD71003C597B /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = ../FeedViewController.swift; sourceTree = "<group>"; };
+		96F47BD11BADDEAF003C597B /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		96F47BD81BADE29F003C597B /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedItem.swift; path = ../FeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				960128BF1BAB49EC0091625C /* AppDelegate.swift */,
-				960128C11BAB49EC0091625C /* ViewController.swift */,
+				96F47BCF1BADDD71003C597B /* FeedViewController.swift */,
+				966268D31BAF22A00068AEEE /* FilterViewController.swift */,
+				96F47BD11BADDEAF003C597B /* FeedCell.swift */,
+				96F47BD81BADE29F003C597B /* FeedItem.swift */,
 				960128C31BAB49EC0091625C /* Main.storyboard */,
 				960128C91BAB49EC0091625C /* Assets.xcassets */,
 				960128CB1BAB49EC0091625C /* LaunchScreen.storyboard */,
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				960128C21BAB49EC0091625C /* ViewController.swift in Sources */,
+				966268D41BAF22A00068AEEE /* FilterViewController.swift in Sources */,
 				960128C81BAB49EC0091625C /* ExchangeABit.xcdatamodeld in Sources */,
+				96F47BDA1BADE29F003C597B /* FeedItem.swift in Sources */,
+				96F47BD21BADDEAF003C597B /* FeedCell.swift in Sources */,
+				96F47BD01BADDD71003C597B /* FeedViewController.swift in Sources */,
 				960128C01BAB49EC0091625C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +301,7 @@
 				960128D31BAB49EC0091625C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
