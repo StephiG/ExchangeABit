@@ -8,14 +8,28 @@
 
 import UIKit
 
-class FilterViewController: UIViewController {
+class FilterViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     var thisFeedItem: FeedItem!
+    
+    var collectionView: UICollectionView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10)
+        layout.itemSize = CGSizeMake(150.0, 150.0)
+        collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.backgroundColor = UIColor.whiteColor()
+        collectionView.registerClass(FilterCell.self, forCellWithReuseIdentifier: "cell")
+        
+        self.view.addSubview(collectionView)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,14 +38,20 @@ class FilterViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //UICollectionView dataSource
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
     }
-    */
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        let cell: FilterCell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! FilterCell
+        
+        cell.imageView.image = UIImage(named:"Placeholder")
+        
+        return cell
+
+    }
 
 }
